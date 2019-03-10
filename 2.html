@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i' type='text/css' media='all' />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="w3css/4/w3.css">
+
+
+</head>
+<style>
+    html.scroll-hidden,html.scroll-hidden body{
+      overflow: hidden;
+      height:100vh;
+    }
+    html.scroll-hidden.pad-adjustment body{
+        padding-right : 17px;
+    }
+    html.scroll-hidden.pad-adjustment .fixed-elm{
+        padding-right : 17px;
+    }</style>
+
+
+<style>
+ body{
+  background-color: white;
+  }
+  html{
+
+    overflow: auto;
+  }
+  .fa {
+display:inline-block;
+font:normal normal normal 14px/1 FontAwesome;
+font-size:20px;
+text-rendering:auto;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+transform:translate(0,0);
+}
+.fa-home:before {content:'\e800';}
+.fa-menu:before {content: '\f0c9';}
+.fa-globe:before {content:'\e801';}
+.fa-search:before {content:'\e802'; }
+.fa-thumbs-o-up:before {content:'\e803';}
+.fa-left-open:before {content:'\e804';}
+.fa-right-open:before {content:'\e805';}
+.fa-caret-down:before {content:'\e809';}
+.fa-caret-up:before {content:'\e80a';}
+
+/* W3Schools Font Logo */
+.w3schools-logo {
+  
+font-family:fontawesome;
+text-decoration:none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-size:37px;
+letter-spacing:3px;
+
+display:block;
+position:relative;
+}
+.w3schools-logo .dotcom {color:#4CAF50;}
+
+.fa {
+display:inline-block;
+font:normal normal normal 14px/1 FontAwesome;
+font-size:20px;
+text-rendering:auto;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+transform:translate(0,0);
+}
+.fa-home:before {content:'\e800';}
+.fa-menu:before {content: '\f0c9';}
+.fa-globe:before {content:'\e801';}
+.fa-search:before {content:'\e802'; }
+.fa-thumbs-o-up:before {content:'\e803';}
+.fa-left-open:before {content:'\e804';}
+.fa-right-open:before {content:'\e805';}
+.fa-caret-down:before {content:'\e809';}
+.fa-caret-up:before {content:'\e80a';}
+/* Google */
+#nav_translate, #nav_search {display:none;}
+#nav_translate a {display:inline;}
+#googleSearch {color:#000000;}
+.searchdiv {
+max-width:400px;
+margin:auto;
+text-align:left;
+font-size:16px;
+}
+div.cse .gsc-control-cse, div.gsc-control-cse {
+background-color:transparent;
+border:none;
+padding:0px;
+margin:0px;
+}
+td.gsc-search-button input.gsc-search-button {background-color:white;border-color:white;}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button {
+box-sizing:content-box;
+line-height:normal;
+}
+
+.gsst_a .gscb_a {margin-top:3px;}
+/* Customize W3.CSS */
+#nav_tutorials,#nav_references,#nav_examples,#nav_exercises {
+display:none;
+padding-bottom:40px;
+position:absolute;
+width:100%;
+z-index:5 !important;
+}
+.w3-col .w3-button {
+margin:5px 5px 5px 0;
+font-size:16px;
+}
+.w3-col.l4 .w3-card-2 {
+padding:15px 10px;
+height:260px;
+}
+.w3-theme {color:#fff !important;background-color:#4CAF50 !important;}
+.w3-main {margin-left:230px;}
+.w3-sidebar {
+z-index:3;
+width:230px;
+
+position:absolute !important;
+margin-bottom:-155px;
+}
+.w3-sidebar .w3-bar-block .w3-bar-item{
+padding:0 16px;
+font-size:16px; 
+}
+.w3-bar {
+position:relative;
+z-index:4;
+font-size:17px;
+}
+.w3-wide {
+font-family:"Segoe UI",Arial,sans-serif;
+}
+h1 {
+font-size:80px;
+color:#555555;
+margin:2px 0 -20px 0 !important;
+}
+.certoverlay {
+  position:absolute;
+  top:0;
+  background-color:rgba(0, 0, 0, 0.5);
+  width:100%;
+  text-align:center;
+  padding:15px
+}
+.certoverlay h2 {
+  margin:10px 0 0 0;
+  font-size:36px;
+}
+.certoverlay h3 {
+  margin:0 0 10px 0;
+}
+.sreman{
+  margin:0px auto;
+}
+
+@media screen and (min-width:769px){.w3-sidebar.w3-collapse{display:block !important;}}
+@media screen and (min-width:769px){#myAccordion,.hidesm{display:none !important;}}
+@media screen and (min-width:769px){.w3-main{margin-left:230px !important;}.w3-bar-block .w3-button{padding:0;}}
+@media screen and (max-width:768px){.w3-sidebar.w3-collapse,.barex,.navex{display:none !important;}.w3-bar-block .w3-bar-item{text-align:center !important;padding:2px 0;}h1,.w3-jumbo{font-size:60px !important;}}
+@media screen and (max-width:545px){.certoverlay{padding:10px;height:100%;}.certoverlay h3{font-size:15px;}}
+@media screen and (max-width:380px){.getcert{position:absolute;text-align:center;left:50%;bottom:50%;font-size:13px;}}
+@media only screen and (max-device-width: 1366px){.w3-hide-device{display:none;}}
+
+
+</style>
+  <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img width="39px" height="39px" src="ss2.png" class="img-fluid" alt="Responsive image">
+              <a class="navbar-brand" href="C:\Users\Sreemanth\Desktop\hackgrid\1.html">NEX GEN</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="C:\Users\Sreemanth\Desktop\hackgrid\1.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="C:\Users\Sreemanth\Desktop\hackgrid\2.html">COURSES</a>
+                    </li
+                    <li class="nav-item">
+                      <a class="nav-link " href="C:\Users\Sreemanth\Desktop\hackgrid\3.html" >RANK</a>
+                    </li>
+                   </ul>
+                 
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                         
+                </form>
+        
+              </div>
+            </nav>
+            <marquee behavior="scroll" direction="right">Registrations are available from 9am to 12pm till 11th march--></marquee>
+            <overflow-y: auto><nav class="w3-sidebar w3-collapse w3-white w3-card-2" id="mySidenav" style="color: black">
+                    <div class="w3-bar-block">
+                     <div class="w3-container">
+                      <h4 class="w3-bar-item w3-button">HTML and CSS</h4>
+                     </div>
+                     <a class="w3-bar-item w3-button" href="/html/default.asp">Learn HTML</a></br>
+                     <a class="w3-bar-item w3-button" href="/css/default.asp">Learn CSS</a></br>
+                     <a class="w3-bar-item w3-button" href="/w3css/default.asp">Learn W3.CSS</a></br>
+                     <a class="w3-bar-item w3-button" href="/colors/default.asp">Learn Colors</a></br>
+                     <a class="w3-bar-item w3-button" href="/bootstrap/default.asp">Learn Bootstrap 3</a></br>
+                     <a class="w3-bar-item w3-button" href="/bootstrap4/default.asp">Learn Bootstrap 4</a></br>
+                     <a class="w3-bar-item w3-button" href="/icons/default.asp">Learn Icons</a></br>
+                     <a class="w3-bar-item w3-button" href="/graphics/default.asp">Learn Graphics</a></br>
+                     <a class="w3-bar-item w3-button" href="/howto/default.asp">Learn How To</a></br>
+                     <div class="w3-container"></br>
+                      <h4 class="w3-bar-item w3-button">JavaScript</h4></br>
+                     </div></br>
+                     <a class="w3-bar-item w3-button" href="/js/default.asp">Learn JavaScript</a></br>
+                     <a class="w3-bar-item w3-button" href="/jquery/default.asp">Learn jQuery</a></br>
+                     <a class="w3-bar-item w3-button" href="/angular/default.asp">Learn AngularJS</a></br>
+                     <a class="w3-bar-item w3-button" href="/js/js_json_intro.asp">Learn JSON</a></br>
+                     <a class="w3-bar-item w3-button" href="/js/js_ajax_intro.asp">Learn AJAX</a></br>
+                     <a class="w3-bar-item w3-button" href="/w3js/default.asp">Learn W3.JS</a></br>
+                     <div class="w3-container"></br>
+                      <h4 class="w3-bar-item w3-button">Server Side</h4></br>
+                     </div></br>
+                     <a class="w3-bar-item w3-button" href="/sql/default.asp">Learn SQL</a></br>
+                     <a class="w3-bar-item w3-button" href="/php/default.asp">Learn PHP 5</a></br>
+                     <a class="w3-bar-item w3-button" href="/php7/default.asp">Learn PHP 7</a></br>
+                     <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a></br>
+                     <a class="w3-bar-item w3-button" href="/java/default.asp">Learn Java</a></br>
+                     <a class="w3-bar-item w3-button" href="/asp/default.asp">Learn ASP</a></br>
+                     <a class="w3-bar-item w3-button" href="/nodejs/default.asp">Learn Node.js</a></br>
+                     <a class="w3-bar-item w3-button" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a></br>
+                     <div class="w3-container"></br>
+                      <h4 class="w3-bar-item w3-button">Web Building</h4></br>
+                     </div></br>
+                     <a class="w3-bar-item w3-button" href="/w3css/w3css_templates.asp">Web Templates</a></br>
+                     <a class="w3-bar-item w3-button" href="/browsers/default.asp">Web Statistics</a></br>
+                     <a class="w3-bar-item w3-button" href="/cert/default.asp">Web Certificates</a></br>
+                     <a class="w3-bar-item w3-button" href="/tryit/default.asp">Web Editor</a></br>
+                     <a class="w3-bar-item w3-button" href="/whatis/default.asp">Web Development</a></br>
+                     <div class="w3-container"></br>
+                      <h4 class="w3-bar-item w3-button">XML Tutorials</h4></br>
+                     </div></br>
+                     <a class="w3-bar-item w3-button" href="/xml/default.asp">Learn XML</a></br>
+                     <a class="w3-bar-item w3-button" href="/xml/ajax_intro.asp">Learn XML AJAX</a></br>
+                     <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a></br>
+                     <a class="w3-bar-item w3-button" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a></br>
+                     <a class="w3-bar-item w3-button" href="/xml/schema_intro.asp">Learn XML Schema</a></br>
+                     <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp">Learn XSLT</a></br>
+                     <a class="w3-bar-item w3-button" href="/xml/xpath_intro.asp">Learn XPath</a></br>
+                     <a class="w3-bar-item w3-button" href="/xml/xquery_intro.asp">Learn XQuery</a></br>
+                     <div class="w3-container"></br>
+                      <h4 class="w3-bar-item w3-button">References</h4></br>
+                     </div></br>
+                     <a class="w3-bar-item w3-button" href="/tags/default.asp">HTML Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/cssref/default.asp">CSS Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/jsref/default.asp">JS Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/sql/sql_ref_keywords.asp">SQL Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/php/php_ref_overview.asp">PHP Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/jquery/jquery_ref_overview.asp">jQuery Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/python/python_reference.asp">Python Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap 3 Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_ref_all_classes.asp">Bootstrap 4 Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/w3css/w3css_references.asp">W3.CSS Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/java/java_ref_keywords.asp">Java Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/angular/angular_ref_directives.asp">Angular Reference</a></br>
+                     <a class="w3-bar-item w3-button" href="/charsets/default.asp">UTF-8 Reference</a></br>
+                     <div class="w3-container"></br>
+                      <h4 class="w3-bar-item w3-button">Exercises</h4></br>
+                     </div></br>
+                     <a class="w3-bar-item w3-button" href="/html/html_exercises.asp">HTML Exercises</a></br>
+                     <a class="w3-bar-item w3-button" href="/css/css_exercises.asp">CSS Exercises</a></br>
+                     <a class="w3-bar-item w3-button" href="/js/js_exercises.asp">JavaScript Exercises</a></br>
+                     <a class="w3-bar-item w3-button" href="/sql/sql_exercises.asp">SQL Exercises</a></br>
+                     <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a></br>
+                     <a class="w3-bar-item w3-button" href="/python/python_exercises.asp">Python Exercises</a></br>
+                     <a class="w3-bar-item w3-button" href="/java/java_exercises.asp">Java Exercises</a></br>
+                     <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_exercises.asp">Bootstrap Exercises</a></br>
+                    </div></br>
+                    </nav>  <overflow-y: auto></overflow-y:>
+
+            <center>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-content"><h3 class="base-card-title" title="Interview Preparation Kit">Web Development Practicing Kit</h3><div class="base-card-detail text-content"><div class="skill-progress-bar"><div style="color: cornsilk" class="ui-progress-bar progress-bar theme-m"><div class="progress-filler" style="width: 0%;"></div></div><div class="progress-count text-content"><span class="percentage">0%</span><span class="points-left"> (0/69 challenges solved)</span></div></div></div><button class="ui-btn ui-btn-normal ui-btn-large ui-btn-primary" tabindex="0"><div class="ui-content align-icon-right"><span class="ui-text">Continue Practice</span></div></button></div>
+                </div>
+                <br>
+              </div>  
+              <div  class="card" style="width: 36rem;" :>
+                  <div class="content--list_body"><header class="content--list_header-v2"><div class="challenge-name-details "><div class="pull-left inline-block"><h4 class="challengecard-title">Counting Valleys<div class="card-details pmT"><span class="difficulty easy detail-item">Easy</span><span class="max-score detail-item">Max Score: 15</span><span class="success-ratio detail-item">Success Rate: 94.41%</span></div></h4></div></div><span class="bookmark-cta"><button class="ui-btn ui-btn-normal ui-btn-plain star-button" tabindex="0" aria-label="Add bookmark"><div class="ui-content align-icon-right"><span class="ui-text"><i class="js-bookmark star-icon ui-icon-star"></i></span></div></button></span><div class="cta-container"><div class="ctas"><div class="challenge-submit-btn"><button class="ui-btn ui-btn-normal primary-cta ui-btn-line-primary" tabindex="0"><div class="ui-content align-icon-right"><span class="ui-text">Solve Challenge</span></div></button></div></div></div></header></div>
+                  </div>
+                  <br>
+                </div>   
+                <div  class="card" style="width: 36rem;" :>
+                    <div class="content--list_body"><header class="content--list_header-v2"><div class="challenge-name-details "><div class="pull-left inline-block"><h4 class="challengecard-title">Jumping on the Clouds<div class="card-details pmT"><span class="difficulty easy detail-item">Easy</span><span class="max-score detail-item">Max Score: 20</span><span class="success-ratio detail-item">Success Rate: 94.19%</span></div></h4></div></div><span class="bookmark-cta"><button class="ui-btn ui-btn-normal ui-btn-plain star-button" tabindex="0" aria-label="Add bookmark"><div class="ui-content align-icon-right"><span class="ui-text"><i class="js-bookmark star-icon ui-icon-star"></i></span></div></button></span><div class="cta-container"><div class="ctas"><div class="challenge-submit-btn"><button class="ui-btn ui-btn-normal primary-cta ui-btn-line-primary" tabindex="0"><div class="ui-content align-icon-right"><span class="ui-text">Solve Challenge</span></div></button></div></div></div></header></div>
+                    </div>
+                    <br>
+                  </div> 
+                  <div  class="card" style="width: 36rem;" :>
+                      <div id="contest-challenges-problem" class="individual-challenge-card-v2 content--list-v2 track_content"><div class="content--list_body"><header class="content--list_header-v2"><div class="challenge-name-details "><div class="pull-left inline-block"><h4 class="challengecard-title">Repeated String<div class="card-details pmT"><span class="difficulty easy detail-item">Easy</span><span class="max-score detail-item">Max Score: 20</span><span class="success-ratio detail-item">Success Rate: 90.31%</span></div></h4></div></div><span class="bookmark-cta"><button class="ui-btn ui-btn-normal ui-btn-plain star-button" tabindex="0" aria-label="Add bookmark"><div class="ui-content align-icon-right"><span class="ui-text"><i class="js-bookmark star-icon ui-icon-star"></i></span></div></button></span><div class="cta-container"><div class="ctas"><div class="challenge-submit-btn"><button class="ui-btn ui-btn-normal primary-cta ui-btn-line-primary" tabindex="0"><div class="ui-content align-icon-right"><span class="ui-text">Solve Challenge</span></div></button></div></div></div></header></div></div>
+                      </div>
+                      <br>
+                    </div> 
+                   
+
+             </center>
+  </body>
+</html>
